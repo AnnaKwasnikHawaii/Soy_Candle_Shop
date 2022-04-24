@@ -1,14 +1,32 @@
-Ekologiczne Świeczki Sojowe / Soy Candle Shop
+# Ekologiczne Świeczki Sojowe / Soy Candle Shop
 
-The project was created by technology:
+## The project was created by technology:
 HTML5, CSS3, Vanilla JS, RWD, Node.js (Express.js), MongoDB
 
-To run this project locally you should open bash and click npm install and npm start.
 
+## To run this project locally you should open bash in VSC
 
-While doing the project, I was following the steps below:
+1. For run backend:
+```
+npm install
+```
+```
+npm start
+```
+2. For run frontend:
+```
+cd frontend
+```
+```
+npm install
+```
+```
+npm start
+```
 
-1. Create Folder Structure
+## While doing the project, I was following the steps below:
+
+### 1. Create Folder Structure
    1. create root folder as soy_candle_shop
    2. add frontend and backend folder
    3. create src folder in frontend
@@ -19,7 +37,7 @@ While doing the project, I was following the steps below:
    8. run npm start
    9. check result
 
- 2. Design Website
+ ### 2. Design Website
    1. create style.css
    2. link style.css to index.html
    3. create div.grid-container
@@ -27,7 +45,7 @@ While doing the project, I was following the steps below:
    5. style html, body
    6. style grid-container, header, main and footer
 
-3. Create Static Home Screen
+### 3. Create Static Home Screen
    1. create ul.products
    2. create li
    3. create div.product
@@ -35,7 +53,7 @@ While doing the project, I was following the steps below:
    5. style ul.products and internal divs
    6. duplicate 2 times to show 3 products
 
-4. Render Dynamic Home Screen
+### 4. Render Dynamic Home Screen
    1. create data.js
    2. export an array of 6 products
    3. create screens/HomeScreen.js
@@ -50,7 +68,7 @@ While doing the project, I was following the steps below:
    12. set main_container innerHTML to HomeScreen.render()
    13. set load event of window to router() function     
 
-5. Build Url Router
+### 5. Build Url Router
    1. create routes as route:screen object for home screen
    2. create utils.js
    3. export parseRequestURL()
@@ -62,7 +80,7 @@ While doing the project, I was following the steps below:
    9. if route exists render it, else render Error404
    10. create screens/Error404.js and render error message
 
-6. Create Node.JS Server
+### 6. Create Node.JS Server
    1. run npm init in root jsamazona folder
    2. npm install express
    3. create server.js
@@ -73,7 +91,7 @@ While doing the project, I was following the steps below:
    8. return products in data.js
    9. run npm start
    
-7. Load Products From Backend
+### 7. Load Products From Backend
    1. edit HomeScreen.js
    2. make render async
    3. fetch products from '/api/products' in render()
@@ -81,7 +99,7 @@ While doing the project, I was following the steps below:
    5. use cors on backend
     6. check the result
 
-8. Add Webpack
+### 8. Add Webpack
    1. cd frontend
    2. npm install -D webpack webpack-cli webpack-dev-server
    3. npm uninstall live-server
@@ -89,12 +107,15 @@ While doing the project, I was following the steps below:
    5. move index.html, style.css and images to frontend folder
    6. rename app.js to index.js
    7. update index.html
-   8. add <script src="main.js"></script> before </body>
+   8. add 
+   ```
+   <script src="main.js"></script> before </body>
+   ```
    9. npm start
    10. npm install axios
    11. change fetch to axios in HomeScreen
 
-9. Install Babel For ES6 Syntax
+### 9. Install Babel For ES6 Syntax
    1. npm install -D babel core, cli, node, preset-env
    2. Create .babelrc and set presets to @babel/preset-env
    3. npm install -D nodemon
@@ -102,7 +123,7 @@ While doing the project, I was following the steps below:
    5. convert require to import in server.js
    6. npm start
 
-10. Enable Code Linting
+### 10. Enable Code Linting
     1. npm install -D eslint
     2. install VSCode eslint extension
     3. create .eslintrc and set module.exports for env to node
@@ -113,13 +134,12 @@ While doing the project, I was following the steps below:
     8. set parserOptions to ecmaVersion 11 and sourceType to module
     9. set rules for no-console to 0 to ignore linting error
 
-11. Install VSCode Extension
+### 11. Install VSCode Extension
     1. JavaScript (ES6) code snippets
-    2. ES7 React/Redux/GraphQL/React-Native snippets
-    3. Prettier - Code formatter
-    4. HTML&LESS grammar injections
+    2. Prettier - Code formatter
+    3. HTML&LESS grammar injections
 
-12. Create Rating Component
+### 12. Create Rating Component
     1. create components/Rating.js
     2. link to fontawesome.css in index.html
     3. create div.rating
@@ -131,7 +151,7 @@ While doing the project, I was following the steps below:
     9. Edit HomeScreen
     10. Add div.product-rating and use Rating component
 
-13. Product Screen
+### 13. Product Screen
     1. get product id from request
     2. implement /api/product/:id api
     3. send Ajax request to product api
@@ -145,7 +165,7 @@ While doing the project, I was following the steps below:
     11. after_render() to add event to the button
     12. redirect user to cart/:product_id
 
- 14. Product Screen UI
+ ### 14. Product Screen UI
     1. create back to result link
     2. create div.details with 3 columns
     3. column 1 for product image
@@ -154,13 +174,13 @@ While doing the project, I was following the steps below:
     6. style .details and all columns
     7. create add to cart button with add-button id
 
-15. Product Screen Action
+### 15. Product Screen Action
     1. after_render() to add event to the button
     2. add event handler for the button
     3. redirect user to cart/:product_id
     4. implement after_render in index.js
 
- 16. Add To Cart Action
+ ### 16. Add To Cart Action
     1. create CartScreen.js
     2. parseRequestUrl
     3. getProduct(request.id)
@@ -171,7 +191,7 @@ While doing the project, I was following the steps below:
     8. else add item
     9. setCartItems
 
-17. Cart Screen UI
+### 17. Cart Screen UI
     1. cartItems = getCartItems()
     2. create 2 columns for cart items and cart action
     3. cartItems.length === 0 ? cart is empty
@@ -181,7 +201,7 @@ While doing the project, I was following the steps below:
     7. Proceed to Checkout button
     8. Add CSS Style
 
-18. Update and Delete Cart Items
+### 18. Update and Delete Cart Items
     1. add qty select next to each item
     2. after_render()
     3. add change event to qty select
@@ -198,7 +218,7 @@ While doing the project, I was following the steps below:
     14. if id === parseRequestUrl().id? redirect to '/cart'
     15. else rerender(CartScreen);
 
-19. Connect To MongoDB and Create Admin User
+### 19. Connect To MongoDB and Create Admin User
     1. npm install mongoose
     2. connect to mongodb
     3. create config.js
@@ -209,12 +229,12 @@ While doing the project, I was following the steps below:
     8. create userRoute
     9. create createadmin route
 
-20. Sign-in Screen UI
+### 20. Sign-in Screen UI
     2. create SigninScreen
     3. render email and password fields
     4. style signin form
 
-21. Sign-in Screen Backend
+### 21. Sign-in Screen Backend
     3. create signin api in backend
     4. create route for /api/users/signin
     5. create check user name and password
@@ -232,7 +252,7 @@ While doing the project, I was following the steps below:
     17. return token
     18. test with correct user and password
 
-22. Sign-in Screen Action
+### 22. Sign-in Screen Action
     1. after_render handle form submit
     2. create signin request in frontend
     3. show alert if email or password is incorrect
@@ -240,7 +260,7 @@ While doing the project, I was following the steps below:
     5. create Header component
     6. if userInfo.email exist show user name otherwise show signin
 
-23. Create Progress Indicator and Alert Component
+### 23. Create Progress Indicator and Alert Component
     1. create overlay loading div in index.html
     2. Style overlay loading
     3. create showLoading() function
@@ -256,48 +276,43 @@ While doing the project, I was following the steps below:
     13. add class active to it
     14. add event listener for button to call callback
 
-24. Register Screen Action
-    1. after_render handle form submit
-    2. create register request in frontend
-    3. create register api in backend
-25. Create Checkout Wizard Header Component
-
-24. Register Screen
+### 24. Register Screen
     1. create RegisterScreen.js
     2. add form elements
     3. after_render handle form submit
     4. create register request in frontend
     5. create register api in backend
     
-25. User Profile Screen
+### 25. User Profile Screen
     1. create ProfileScreen.js
     2. add form elements
     3. after_render handle form submit
     4. create profile update request in frontend
     5. create profile update api in backend
     6. implement sign out
-26. Create Checkout Wizard Header Component
-    1. create component
-    2. style component
 
-27. Shipping Screen
-    1. create ShippingScreen.js
-    2. style elements
-    3. handle form submit
-27. Payment Screen
-28. Payment Screen
-    1. create PaymentScreen.js
-    2. style elements
-    3. handle form submit
+### 26. Checkout Wizard
+    1. create CheckoutSteps.js
+    2. create div elements for step 1 to 4
+    3. create redirectUser() in utils.js
+    4. copy profile screen and as shipping screen
+    5. use CheckoutStep
+    6. define getShipping and setShipping
+    7. copy shipping screen and as payment screen
+    8. define getPayment and setPayment
+    9. redirect user to PlaceOrder.js
 
-29. PlaceOrder Screen UI
+### 27. PlaceOrder Screen UI
     1. create PlaceOrder.js
     2. style elements
 
-30. PlaceOrder Screen Action
-    1. handle form submit
-    2. create backend api to create order
+### 28. PlaceOrder Screen Action
+    1. handle place order button click
+    2. createOrder api
+    3. create orderModel
+    4. create orderRouter
+    5. create post order route
 
-31. Order Screen
+### 29. Order Screen
     1. create OrderScreen.js
     2. style elements

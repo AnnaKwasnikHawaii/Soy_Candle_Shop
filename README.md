@@ -6,7 +6,7 @@ HTML5, CSS3, Vanilla JS, RWD, Node.js (Express.js), MongoDB
 
 ## To run this project locally you should open bash in VSC
 
-#### 1. For run backend:
+#### 1. For run backend in root folder (soy_candle_shop):
 ```
 npm install
 ```
@@ -23,6 +23,20 @@ npm install
 ```
 npm start
 ```
+
+## To run the project you should have in your "devDependencies" (package.json):
+
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2"
+  
 
 ## While doing the project, I was following the steps below:
 

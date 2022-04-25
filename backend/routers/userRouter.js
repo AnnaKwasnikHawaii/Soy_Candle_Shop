@@ -11,8 +11,8 @@ userRouter.get(
     try {
       const user = new User({
         name: 'admin',
-        email: 'admin@example.com',
-        password: 'jsamazona',
+        email: 'anna.kwasnik.hawaii@gmail.com',
+        password: 'Hawaii17',
         isAdmin: true,
       });
       const createdUser = await user.save();

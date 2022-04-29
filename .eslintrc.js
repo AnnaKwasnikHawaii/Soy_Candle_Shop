@@ -9,6 +9,7 @@ module.exports ={
         sourceType: 'module',
         ecmaVersion: 12,
     },
+    ignorePatterns: [".env"],
     rules:{
         'no-console': 0,
         "no-underscore-dangle": 0,

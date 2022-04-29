@@ -3,16 +3,15 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 import bodyParser from 'body-parser'
 import data from './data'
-// import config from './config'
+import config from './config'
 import userRouter from './routers/userRouter'
 import orderRouter from './routers/orderRouter'
 
 
 mongoose
- .connect("mongodb://localhost:27017/[AnnaKwasnik]", {
+ .connect(config.MONGODB_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        // useCreateIndex: true,
     })
     .then(() => {
         console.log('Connected to mongodb.')

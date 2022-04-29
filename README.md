@@ -1,7 +1,7 @@
 # Ekologiczne Świeczki Sojowe / Soy Candle Shop
 
 ## The project was created by technology:
-HTML5, CSS3, Vanilla JS, RWD, Node.js (Express.js), MongoDB
+HTML5, CSS3, Vanilla JS, RWD, Node.js (Express.js), MongoDB, Mongoose
 
 
 ## To run this project locally you should open bash in VSC
@@ -37,6 +37,15 @@ npm start
     "nodemon": "^2.0.15",
     "prettier": "^2.6.2"
   
+  ## To run the project you should have in your "dependencies" (package.json):
+
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.1"
 
 ## While doing the project, I was following the steps below:
 

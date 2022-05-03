@@ -4,7 +4,7 @@
   "description": "Ekologiczne Świeczki Sojowe/Soy Candle Shop",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch backend --exec babel-node backend/server.js",
+    "start": "babel-node backend/server.js",
     "lint": "eslint --ext .js"
   },
   "author": "",

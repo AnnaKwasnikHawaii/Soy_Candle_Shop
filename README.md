@@ -47,6 +47,12 @@ npm start
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.1"
 
+## If there is a problem, you need to install:
+```
+npm i -D @babel/core @babel/node @babel/cli
+```
+
+
 ## While doing the project, I was following the steps below:
 
 ### 1. Create Folder Structure

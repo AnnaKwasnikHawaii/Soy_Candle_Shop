@@ -342,6 +342,10 @@ npm i -D @babel/core @babel/node @babel/cli
 4. create orderRouter
 5. create post order route
 
- ### 29. Order Screen
- 1. create OrderScreen.js
+### 29. Order Screen
+1. create OrderScreen.js
+2. style elements
+
+### 30. Adding About
+1. create AboutScreen.js
 2. style elements

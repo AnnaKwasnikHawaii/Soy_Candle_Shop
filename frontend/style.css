@@ -113,10 +113,6 @@ header a:hover {
   color: palevioletred;
 }
 
-.brand a {
-  font-size: 3rem;
-}
-
 footer {
   background-color: #203040;
   display: flex;
@@ -377,3 +373,38 @@ footer {
   font-weight: bold;
   color: rgb(224, 45, 104);
 }
+
+.about-container {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-quote {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-family: Helvetica, Arial;;
+}
+.about-image {
+  display: flex;
+  justify-content: center;
+  height: 700px;
+}
+
+.header-link {
+  padding: 0 20px;
+  font-size: 3rem;
+}
+
+.header-link-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-extra-link {
+  padding: 0 20px;
+}
+
+
